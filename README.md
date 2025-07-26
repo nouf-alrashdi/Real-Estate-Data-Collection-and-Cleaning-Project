@@ -56,31 +56,31 @@ git clone https://github.com/nouf-alrashdi/Real-Estate-Data-Collection-and-Clean
 ---
 
 ## Data Scraping
-- **Notebook**: `project/Scraping_Hilal_and_Dubizzle.ipynb`
+- **Notebook**: `Scraping_Hilal_and_Dubizzle.ipynb`
 - **Description**: Step-by-step scraping of Dubizzle rental listings and Hilal properties using requests and BeautifulSoup.
 - **Output CSVs**: 
-- `project/Datasets/dubizzle_properties_for_rent.csv`
-- `project/Datasets/hilal_rental_data.csv`
+- `dubizzle_properties_for_rent.csv`
+- `hilal_rental_data.csv`
 
 ---
 
 ## Data Cleaning & Integration
-- **Notebook**: `project/Cleaning_and_Merging.ipynb`
+- **Notebook**: `Cleaning_and_Merging.ipynb`
 - **Steps**:
 - Renamed columns for consistency
 - Converted prices, size, and room counts to numeric types
 - Removed or filled missing values using group median or global median
 - Cleaned inconsistent formatting (e.g., '300 SQM' → 300)
 - Removed duplicates 
-- Merged and deduped into `project/Datasets/Merged_Cleaned_Dataset.csv`
+- Merged and deduped into `Merged_Cleaned_Dataset.csv`
 
 ---
 
 ## Feature Engineering
-- **Notebook**: `project/Feature_Engineering.ipynb`
+- **Notebook**: `Feature_Engineering.ipynb`
 - **Derived Features**:
 - Price per SQM: price / size
 - Total rooms: bedrooms + bathrooms
 - Location encoding: one-hot encoding for ML compatibility
 - Feature scaling: using both MinMaxScaler and StandardScaler
-- **Output**: `project/Datasets/Final_Dataset.csv`
+- **Output**: `Final_Dataset.csv`
